@@ -1,11 +1,11 @@
 import turtle as t
 
 def generate_fibonacci(n):
-    x = [0, 1]
+    fib = [0, 1]
     for i in range(n+1):
-        sum = x[i+1] + x[i]
-        x.append(sum)
-    return x
+        sum = fib[i+1] + fib[i]
+        fib.append(sum)
+    return fib
 
 def plot_fibonacci(fib):
     for num in fib:
@@ -17,4 +17,3 @@ def main():
     plot_fibonacci(fib0)
 
 main()
-    
